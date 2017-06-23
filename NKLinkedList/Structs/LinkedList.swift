@@ -80,6 +80,14 @@ extension LinkedList {
         }
     }
     
+    mutating public func removeFirst() {
+        let firstNode = root
+        root = root?.next
+        firstNode?.next = nil 
+    }
+    
+    mutating public func removeLast() { lastNode?.previous?.next = nil }
+    
     mutating public func removeAll() { root = nil }
 }
 

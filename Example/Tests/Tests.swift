@@ -18,10 +18,34 @@ class Tests: XCTestCase {
         var list = LinkedList<Int>()
         list.append(value: 0)
         list.append(value: 1)
-        list.append(value: )
+        list.append(value: 2)
         
         XCTAssertEqual(list.head, 0)
-        XCTAssertEqual(list.tail, <#T##expression2: Equatable##Equatable#>)
+        XCTAssertEqual(list.tail, 2)
+        XCTAssertEqual(list.count, 3)
+    }
+    
+    func testDeletion() {
+        var list = LinkedList<Int>()
+        list.append(value: 0)
+        list.append(value: 1)
+        list.append(value: 2)
+        
+        XCTAssertEqual(list.count, 3)
+        list.removeLast()
+        XCTAssertEqual(list.count, 2)
+        XCTAssertEqual(list.tail, 1)
+        XCTAssertEqual(list.head, 0)
+        
+        list.removeFirst()
+        XCTAssertEqual(list.count, 1)
+        XCTAssertEqual(list.tail, 1)
+        XCTAssertEqual(list.head, 1)
+        
+        list.removeFirst()
+        XCTAssertEqual(list.count, 0)
+        XCTAssertNil(list.head)
+        XCTAssertNil(list.tail)
     }
     
 }
