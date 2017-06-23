@@ -14,16 +14,53 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testInsertion() {
+        var list = LinkedList<Int>()
+        list.append(value: 0)
+        list.append(value: 1)
+        list.append(value: 2)
+        
+        XCTAssertEqual(list.head, 0)
+        XCTAssertEqual(list.tail, 2)
+        XCTAssertEqual(list.count, 3)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+    func testDeletion() {
+        var list = LinkedList<Int>()
+        list.append(value: 0)
+        list.append(value: 1)
+        list.append(value: 2)
+        
+        XCTAssertEqual(list.count, 3)
+        list.removeLast()
+        XCTAssertEqual(list.count, 2)
+        XCTAssertEqual(list.tail, 1)
+        XCTAssertEqual(list.head, 0)
+        
+        list.removeFirst()
+        XCTAssertEqual(list.count, 1)
+        XCTAssertEqual(list.tail, 1)
+        XCTAssertEqual(list.head, 1)
+        
+        list.removeFirst()
+        XCTAssertEqual(list.count, 0)
+        XCTAssertNil(list.head)
+        XCTAssertNil(list.tail)
+    }
+    
+    func testSequence() {
+        var list = LinkedList<Int>()
+        list.append(value: 0)
+        list.append(value: 1)
+        list.append(value: 2)
+        
+        var arr = [Int]()
+        for val in list {
+            arr.append(val)
+            assert(arr.count <= 3)
         }
+        
+        XCTAssertEqual(arr, [0, 1, 2])
     }
     
 }
