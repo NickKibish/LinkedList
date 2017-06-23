@@ -63,4 +63,18 @@ class Tests: XCTestCase {
         XCTAssertEqual(arr, [0, 1, 2])
     }
     
+    func testInsertionToBegin() {
+        var list = LinkedList<Int>()
+        list.insertToBegin(value: 0)
+        list.insertToBegin(value: 1)
+        list.insertToBegin(value: 2)
+        
+        var arr = [Int]()
+        for val in list {
+            arr.append(val)
+            assert(arr.count <= 3)
+        }
+        
+        XCTAssertEqual(arr, [2, 1, 0])
+    }
 }
