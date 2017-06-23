@@ -8,10 +8,12 @@
 import Foundation
 
 public struct LinkedList<T> {
+    fileprivate var root: Node?
+    
     public struct LinkedListIterator: IteratorProtocol {
         var node: Node?
-        mutating public func next() -> Node? {
-            return node?.next
+        mutating public func next() -> T? {
+            return node?.next?.value
         }
     }
     
@@ -25,20 +27,16 @@ public struct LinkedList<T> {
         }
     }
     
-    fileprivate var root: Node?
+    public init() { }
+    
+    public init(headValue: T) {
+        root = Node(value: headValue)
+    }
 }
 
-// MARK: - Public Properties
+// MARK: - Private Properties
 extension LinkedList {
-    public var isEmpty: Bool {
-        return root == nil
-    }
-    
-    public var head: Node? {
-        return root
-    }
-    
-    public var tail: Node? {
+    fileprivate var lastNode: Node? {
         if var node = root {
             while case let next? = node.next {
                 node = next
@@ -47,6 +45,15 @@ extension LinkedList {
         }
         return nil
     }
+}
+
+// MARK: - Public Properties
+extension LinkedList {
+    public var isEmpty: Bool { return root == nil }
+    
+    public var head: T? { return root?.value }
+    
+    public var tail: T? { return lastNode?.value }
     
     public var count: Int {
         if var node = root {
@@ -65,7 +72,7 @@ extension LinkedList {
 extension LinkedList {
     mutating public func append(value: T) {
         let newNode = Node(value: value)
-        if let lastNode = tail {
+        if let lastNode = lastNode {
             newNode.previous = lastNode
             lastNode.next = newNode
         } else {
@@ -73,14 +80,10 @@ extension LinkedList {
         }
     }
     
-    mutating public func removeAll() {
-        root = nil
-    }
+    mutating public func removeAll() { root = nil }
 }
 
 extension LinkedList: Sequence {
-    public func makeIterator() -> LinkedListIterator {
-        return LinkedListIterator(node: root)
-    }
+    public func makeIterator() -> LinkedListIterator { return LinkedListIterator(node: root) }
 }
 
