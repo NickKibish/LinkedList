@@ -71,6 +71,13 @@ extension LinkedList {
 
 // MARK: - Public Methods
 extension LinkedList {
+    mutating public func insertToBegin(value: T) {
+        let newNode = Node(value: value)
+        newNode.next = root
+        root?.previous = newNode
+        root = newNode
+    }
+    
     mutating public func append(value: T) {
         let newNode = Node(value: value)
         if let lastNode = lastNode {
