@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  One of the most common data structures.
+  This is one of the most common data structures. You can find more information in the 'Algorithms (4th Edition)' book by Robert Sedgewick.
                        DESC
 
   s.homepage         = 'https://github.com/NickKibish/LinkedList.git'
