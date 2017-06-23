@@ -1,0 +1,16 @@
+PODS:
+  - NKLinkedList (0.1.0)
+
+DEPENDENCIES:
+  - NKLinkedList (from `../`)
+
+EXTERNAL SOURCES:
+  NKLinkedList:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NKLinkedList: 80cffea64a9a40eae03e41a9e6d361cafa2a9deb
+
+PODFILE CHECKSUM: f41349f17a1f8e99bfae0af98c805c3b5a37401f
+
+COCOAPODS: 1.2.1
