@@ -13,7 +13,10 @@ public struct LinkedList<T> {
     public struct LinkedListIterator: IteratorProtocol {
         var node: Node?
         mutating public func next() -> T? {
-            return node?.next?.value
+            defer {
+                node = node?.next
+            }
+            return node?.value
         }
     }
     
@@ -29,9 +32,7 @@ public struct LinkedList<T> {
     
     public init() { }
     
-    public init(headValue: T) {
-        root = Node(value: headValue)
-    }
+    public init(headValue: T) { root = Node(value: headValue) }
 }
 
 // MARK: - Private Properties

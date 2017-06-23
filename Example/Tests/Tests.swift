@@ -48,4 +48,19 @@ class Tests: XCTestCase {
         XCTAssertNil(list.tail)
     }
     
+    func testSequence() {
+        var list = LinkedList<Int>()
+        list.append(value: 0)
+        list.append(value: 1)
+        list.append(value: 2)
+        
+        var arr = [Int]()
+        for val in list {
+            arr.append(val)
+            assert(arr.count <= 3)
+        }
+        
+        XCTAssertEqual(arr, [0, 1, 2])
+    }
+    
 }
