@@ -1,0 +1,6 @@
+use_frameworks!
+target 'NKLinkedList_Tests' do
+  pod 'NKLinkedList', :path => '../'
+  
+  
+end
