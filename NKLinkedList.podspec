@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NKLinkedList'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Implementation of LinkedList structure on Swift language'
 
 # This description is used to generate tags and improve search results.
