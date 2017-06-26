@@ -1,5 +1,5 @@
 PODS:
-  - NKLinkedList (0.1.0)
+  - NKLinkedList (0.2.2)
 
 DEPENDENCIES:
   - NKLinkedList (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NKLinkedList: 80cffea64a9a40eae03e41a9e6d361cafa2a9deb
+  NKLinkedList: a7627bd23de868614825bcab90b0757df30d6c8f
 
 PODFILE CHECKSUM: f41349f17a1f8e99bfae0af98c805c3b5a37401f
 

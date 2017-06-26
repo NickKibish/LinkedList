@@ -1,9 +1,9 @@
 {
   "name": "NKLinkedList",
-  "version": "0.1.0",
-  "summary": "A short description of NKLinkedList.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Mykola Kibysh/NKLinkedList",
+  "version": "0.2.2",
+  "summary": "Implementation of LinkedList structure on Swift language",
+  "description": "This is one of the most common data structures. You can find more information in the 'Algorithms (4th Edition)' book by Robert Sedgewick.",
+  "homepage": "https://github.com/NickKibish/LinkedList.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "Mykola Kibysh": "mykola.kibysh@ticketmaster.com"
   },
   "source": {
-    "git": "https://github.com/Mykola Kibysh/NKLinkedList.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/NickKibish/LinkedList.git",
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NKLinkedList/Classes/**/*"
+  "source_files": "NKLinkedList/**/*"
 }

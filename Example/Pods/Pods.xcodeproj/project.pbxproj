@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E760A1FDFB6EA907AB4E7D8F8D5659E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		36EEF5B91EFD18FC005EC6B4 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EEF5B81EFD18FC005EC6B4 /* LinkedList.swift */; };
+		3A4DE9C148873CC8EE5EBAF764B1104F /* NKLinkedList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CE27978D6606A3986BDF1B212734C /* NKLinkedList-dummy.m */; };
 		7031A4395F36A6EDE5D7F8E0673588DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B2D024AC8C3362DBF903F7CF9B93DCDB /* NKLinkedList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CE27978D6606A3986BDF1B212734C /* NKLinkedList-dummy.m */; };
+		AEEC0DFECF08970359DBE56BA4E67203 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA3D81B5E9094C686E56295E07ABC4 /* LinkedList.swift */; };
 		CA3174281F219B22856BA5802C47E0C3 /* Pods-NKLinkedList_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DA046CA5BB818841A48A1BADB8CFF8 /* Pods-NKLinkedList_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38B047700E386BFF002F3304075E461 /* Pods-NKLinkedList_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB649F5B507007D027D478D99FC597 /* Pods-NKLinkedList_Tests-dummy.m */; };
 		E8B664A38B425522807237654028551D /* NKLinkedList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B59CE19D799EBC6079C6803CB29F73D /* NKLinkedList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,7 +32,6 @@
 		17F424D37E1B254754E645565E651D78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2622A3C60F77738735BC527DCE110270 /* Pods-NKLinkedList_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKLinkedList_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		34C0BA3AB326910A918ED1D248AA240E /* NKLinkedList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NKLinkedList.modulemap; sourceTree = "<group>"; };
-		36EEF5B81EFD18FC005EC6B4 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		3E0CE27978D6606A3986BDF1B212734C /* NKLinkedList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKLinkedList-dummy.m"; sourceTree = "<group>"; };
 		3FF1855D9D2D9FCAFE793BBFF87505C6 /* Pods-NKLinkedList_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NKLinkedList_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4F512FAFA6C5FDEAF5BB0C2ABEFA1A00 /* NKLinkedList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKLinkedList-prefix.pch"; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		5FCB649F5B507007D027D478D99FC597 /* Pods-NKLinkedList_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKLinkedList_Tests-dummy.m"; sourceTree = "<group>"; };
 		6546B407540AC017DEB0B01E71674F69 /* Pods-NKLinkedList_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKLinkedList_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68FA3D81B5E9094C686E56295E07ABC4 /* LinkedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B59CE19D799EBC6079C6803CB29F73D /* NKLinkedList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKLinkedList-umbrella.h"; sourceTree = "<group>"; };
 		A2CC2DF6646D31B74EE6C884457B353D /* Pods_NKLinkedList_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKLinkedList_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,14 +78,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		36EEF5B71EFD18D9005EC6B4 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-				36EEF5B81EFD18FC005EC6B4 /* LinkedList.swift */,
-			);
-			path = Structs;
-			sourceTree = "<group>";
-		};
 		6EAD4F54FB1B76098D7D75425E9E9D57 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +97,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		B4FBE690DF24F4DCC158BDCE8078F9A2 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				68FA3D81B5E9094C686E56295E07ABC4 /* LinkedList.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,19 +116,11 @@
 		C15F592D16508C32A4FC324B145A9F24 /* NKLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				C38B263A9C3B593FB4731CCC1F23D63C /* NKLinkedList */,
+				FD05CF93607D89204FC3F38D67C2F74F /* NKLinkedList */,
 				E1F887958AACA281E1ECC6A2DEEB5396 /* Support Files */,
 			);
 			name = NKLinkedList;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		C38B263A9C3B593FB4731CCC1F23D63C /* NKLinkedList */ = {
-			isa = PBXGroup;
-			children = (
-				36EEF5B71EFD18D9005EC6B4 /* Structs */,
-			);
-			path = NKLinkedList;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -160,6 +152,14 @@
 				A2CC2DF6646D31B74EE6C884457B353D /* Pods_NKLinkedList_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FD05CF93607D89204FC3F38D67C2F74F /* NKLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				B4FBE690DF24F4DCC158BDCE8078F9A2 /* Structs */,
+			);
+			path = NKLinkedList;
 			sourceTree = "<group>";
 		};
 		FE76BDD74A3DF568BE71CCD6D55968ED /* Pods-NKLinkedList_Tests */ = {
@@ -224,7 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F69213DC0E9742381B49B48C1D5EA5B2 /* Build configuration list for PBXNativeTarget "NKLinkedList" */;
 			buildPhases = (
-				B39DD5FEE5B517FAD45CBE6AE6AF0ACB /* Sources */,
+				CB338E8216E6B7E1D064402A7F772BC9 /* Sources */,
 				856BC651659B40E2AE05A0DC5869C199 /* Frameworks */,
 				FF5DB2E0674ABF86553EFF49D136E93F /* Headers */,
 			);
@@ -250,7 +250,7 @@
 						LastSwiftMigration = 0830;
 					};
 					C5010B369B860D46720C9A2F2307405F = {
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -281,12 +281,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B39DD5FEE5B517FAD45CBE6AE6AF0ACB /* Sources */ = {
+		CB338E8216E6B7E1D064402A7F772BC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EEF5B91EFD18FC005EC6B4 /* LinkedList.swift in Sources */,
-				B2D024AC8C3362DBF903F7CF9B93DCDB /* NKLinkedList-dummy.m in Sources */,
+				AEEC0DFECF08970359DBE56BA4E67203 /* LinkedList.swift in Sources */,
+				3A4DE9C148873CC8EE5EBAF764B1104F /* NKLinkedList-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 172DA7E69EA8422D7BBE784A42AC975F /* NKLinkedList.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -471,7 +470,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 172DA7E69EA8422D7BBE784A42AC975F /* NKLinkedList.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

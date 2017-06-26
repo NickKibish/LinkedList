@@ -16,9 +16,9 @@ class Tests: XCTestCase {
     
     func testInsertion() {
         var list = LinkedList<Int>()
-        list.append(value: 0)
-        list.append(value: 1)
-        list.append(value: 2)
+        list.append(0)
+        list.append(1)
+        list.append(2)
         
         XCTAssertEqual(list.head, 0)
         XCTAssertEqual(list.tail, 2)
@@ -27,9 +27,9 @@ class Tests: XCTestCase {
     
     func testDeletion() {
         var list = LinkedList<Int>()
-        list.append(value: 0)
-        list.append(value: 1)
-        list.append(value: 2)
+        list.append(0)
+        list.append(1)
+        list.append(2)
         
         XCTAssertEqual(list.count, 3)
         list.removeLast()
@@ -50,9 +50,9 @@ class Tests: XCTestCase {
     
     func testSequence() {
         var list = LinkedList<Int>()
-        list.append(value: 0)
-        list.append(value: 1)
-        list.append(value: 2)
+        list.append(0)
+        list.append(1)
+        list.append(2)
         
         var arr = [Int]()
         for val in list {
